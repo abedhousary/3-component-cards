@@ -15,7 +15,7 @@ body {
 }
 .cards{
     width: 300px;
-    height: 400px;
+    height: 480px;
     display: flex;
     /* align-items: center; */
     flex-direction: column;
@@ -33,25 +33,51 @@ body {
 }
 
 .cards .car-type {
-    width: 70px;
-    height: 50px;
-    background-image: url(./images/icon-sedans.svg);
-    background-repeat: no-repeat;
+    /* width: 70px;
+    height: 50px; */
     align-self: flex-start;
     margin: 50px 0px 0px 40px;
+    border:none;
+    outline: none;
 }
+
 .cards .car-title {
-    color: var(--transwhite);
+    color: var(--lightgray);
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 31px;
-    margin:20px 0px 0px 40px;
+    font-size: 45px;
+    margin:30px 0px 0px 40px;
 }
 .cards .desc {
     color: var(--transwhite);
-    font-size: 12px;
-    width: 132px;
+    width: 217px;
     font-family: 'Lexend Deca', sans-serif;
     margin: 20px 0px 0px 40px;
-    line-height: 21px;
+    line-height: 23px;
+}
+.cards .btn {
+    width: 150px;
+    height: 50px;
+    background-color: var(--transwhite);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 100px 0px 0px 40px;
+    color: var(--brightcyan);
+}
+.cards:nth-child(2) .btn {
+    color: var(--darkcyan);
+    background-color: var(--lightgray);
+}
+.cards:nth-child(3) .btn {
+    color: var(--verydarkcyan);
+    background-color: var(--lightgray);
+}
+.cards:nth-child(2) .desc {
+    width: 226px;
+}
+.cards:nth-child(3) .desc {
+    width: 226px;
 }
