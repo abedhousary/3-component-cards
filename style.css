@@ -1,0 +1,57 @@
+:root {
+    --brightcyan:hsl(31, 77%, 52%);
+    --darkcyan:hsl(184, 100%, 22%);
+    --verydarkcyan:hsl(179, 100%, 13%);
+    --transwhite:hsla(0, 0%, 100%, 0.75);
+    --lightgray:hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--transwhite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.cards{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.cards:nth-child(1){
+    background-color: var(--brightcyan);
+    border-radius: 5px 0px 0px 5px;
+}
+.cards:nth-child(2){
+    background-color: var(--darkcyan);
+}
+.cards:nth-child(3){
+    background-color: var(--verydarkcyan);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.cards .car-type {
+    width: 70px;
+    height: 50px;
+    background-image: url(./images/icon-sedans.svg);
+    background-repeat: no-repeat;
+    align-self: flex-start;
+    margin: 50px 0px 0px 40px;
+}
+.cards .car-title {
+    color: var(--transwhite);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 31px;
+    margin:20px 0px 0px 40px;
+}
+.cards .desc {
+    color: var(--transwhite);
+    font-size: 12px;
+    width: 132px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 20px 0px 0px 40px;
+    line-height: 21px;
+}
